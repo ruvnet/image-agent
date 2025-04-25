@@ -1,0 +1,155 @@
+/* Wizard Button Styles */
+.wizard-toggle-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.wizard-toggle-button:hover {
+  background-color: var(--primary-dark, #2a75e6);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.wizard-toggle-button.active {
+  background-color: var(--secondary, #6c757d);
+}
+
+.wizard-toggle-icon {
+  font-size: 1.1rem;
+}
+
+/* AdForm Wizard Button */
+.ad-form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.wizard-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.wizard-button:hover {
+  background-color: var(--primary-dark, #2a75e6);
+}
+
+.wizard-icon {
+  font-size: 1.1rem;
+}
+
+.wizard-promo {
+  background-color: rgba(58, 134, 255, 0.1);
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  border-left: 4px solid var(--primary);
+}
+
+.text-button {
+  background: none;
+  border: none;
+  color: var(--primary);
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+}
+
+.text-button:hover {
+  color: var(--primary-dark, #2a75e6);
+}
+
+/* WizardForm Header */
+.wizard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.switch-form-button {
+  background-color: var(--surface-variant, #f0f0f0);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.switch-form-button:hover {
+  background-color: var(--border);
+}
+
+.wizard-description {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .wizard-toggle-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
+  
+  .ad-form-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .wizard-button {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .wizard-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .switch-form-button {
+    width: 100%;
+  }
+}
+
+/* Dark Mode Adjustments */
+[data-theme='dark'] .wizard-promo {
+  background-color: rgba(58, 134, 255, 0.15);
+}
+
+[data-theme='dark'] .switch-form-button {
+  background-color: var(--surface-variant, #2a2a2a);
+}
+
+[data-theme='dark'] .switch-form-button:hover {
+  background-color: var(--surface, #333);
+}
